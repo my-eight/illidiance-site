@@ -1,4 +1,5 @@
 const элементы = document.querySelectorAll(".проявление");
+const тело = document.body;
 
 const наблюдатель = new IntersectionObserver(
   (записи) => {
@@ -15,7 +16,15 @@ const наблюдатель = new IntersectionObserver(
   },
 );
 
-элементы.forEach((элемент, индекс) => {
-  элемент.style.transitionDelay = `${Math.min(индекс * 45, 220)}ms`;
-  наблюдатель.observe(элемент);
-});
+const запускИнтерфейса = () => {
+  элементы.forEach((элемент, индекс) => {
+    элемент.style.transitionDelay = `${Math.min(индекс * 42, 210)}ms`;
+    наблюдатель.observe(элемент);
+  });
+};
+
+window.setTimeout(() => {
+  тело.classList.remove("загрузка");
+}, 2800);
+
+window.setTimeout(запускИнтерфейса, 1450);

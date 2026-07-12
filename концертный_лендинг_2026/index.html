@@ -10,13 +10,27 @@
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body class="загрузка">
+    <div class="загрузчик" aria-hidden="true">
+      <div class="загрузчик__скан"></div>
+      <div class="загрузчик__ядро">
+        <p>ILLIDIANCE SYSTEM</p>
+        <h2>LIVE SIGNAL</h2>
+        <ul>
+          <li>INITIALIZING TOUR DATA</li>
+          <li>SYNCING CITY NODES</li>
+          <li>OPENING LIVE CHANNEL</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="сцена" aria-hidden="true">
       <div class="сцена__шум"></div>
       <div class="сцена__сетка"></div>
+      <div class="сцена__скан"></div>
       <div class="сцена__луч сцена__луч--левый"></div>
       <div class="сцена__луч сцена__луч--правый"></div>
-      <div class="сцена__метка">LIVE</div>
+      <div class="сцена__метка">MILLENNIUM CRUSHERS</div>
     </div>
 
     <header class="шапка">
@@ -32,7 +46,7 @@
     <main id="начало">
       <section class="герой" aria-labelledby="заголовок">
         <div class="герой__контент проявление">
-          <p class="надпись">Осень 2026 / modern cyber metal</p>
+          <p class="надпись">Live protocol / autumn 2026</p>
           <h1 id="заголовок">
             ILLIDIANCE
             <span>LIVE 2026</span>
@@ -49,7 +63,7 @@
 
         <aside class="герой__сигнал проявление" aria-label="Ближайший концерт">
           <div class="сигнал">
-            <p class="сигнал__статус">Ближайшая дата</p>
+            <p class="сигнал__статус">Next live node</p>
             <p class="сигнал__дата">02.10</p>
             <h2>Москва</h2>
             <p>ХимерА / ILLIDIANCE</p>
@@ -61,11 +75,19 @@
 
       <section class="секция" id="даты" aria-labelledby="даты-заголовок">
         <div class="секция__верх проявление">
-          <p class="надпись">Live registry</p>
+          <p class="надпись">Tour data stream</p>
           <h2 id="даты-заголовок">Концерты 2026</h2>
         </div>
 
         <div class="даты">
+          <div class="даты__шапка проявление" aria-hidden="true">
+            <span>Дата</span>
+            <span>Город</span>
+            <span>Событие</span>
+            <span>Площадка</span>
+            <span>Статус</span>
+          </div>
+
           <article class="концерт проявление">
             <div class="концерт__дата">
               <span>02</span>
@@ -135,7 +157,7 @@
 
       <section class="секция секция--маршрут" id="маршрут" aria-labelledby="маршрут-заголовок">
         <div class="секция__верх проявление">
-          <p class="надпись">Tour sequence</p>
+          <p class="надпись">Route map</p>
           <h2 id="маршрут-заголовок">Маршрут</h2>
         </div>
 
@@ -149,7 +171,7 @@
       </section>
 
       <section class="финал проявление" aria-label="Финальный акцент">
-        <p class="надпись">Signal locked</p>
+        <p class="надпись">Channel online</p>
         <h2>ILLIDIANCE выходит на связь</h2>
         <p>Даты и площадки будут обновляться по мере подтверждения событий.</p>
         <a class="кнопка кнопка--главная" href="#даты">Вернуться к датам</a>

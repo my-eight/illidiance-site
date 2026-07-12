@@ -12,7 +12,3 @@
 
 - репозиторий: https://github.com/my-eight/illidiance-site
 - публичная страница: https://my-eight.github.io/illidiance-site/
-- рабочий remote для push: `github`
-
-GitLab для этого проекта больше не используем. Старый GitLab-проект можно удалить вручную.
-Дальнейшие изменения сайта пушим в GitHub.

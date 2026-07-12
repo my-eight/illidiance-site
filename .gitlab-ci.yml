@@ -1,9 +1,10 @@
-pages:
+deploy-pages:
   image: alpine:latest
   stage: deploy
   script:
     - mkdir -p public
     - cp -R концертный_лендинг_2026/* public/
+  pages: true
   artifacts:
     paths:
       - public
